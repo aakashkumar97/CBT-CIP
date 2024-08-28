@@ -1,4 +1,13 @@
 @import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@500;600;700&display=swap);
+#home,
+.about,
+.abt-txt,
+.ftr-end,
+.mail-div,
+.sponser,
+.sub-box {
+  align-content: center;
+}
 .discover-img h2,
 .places-row h3,
 .sub-box h2,
@@ -18,14 +27,6 @@ button:hover {
 .bg-img {
   background-position: center;
   background-repeat: no-repeat;
-}
-.about,
-.abt-txt,
-.ftr-end,
-.mail-div,
-.sponser,
-.sub-box {
-  align-content: center;
 }
 .abt-img1,
 .abt-img2,
@@ -153,8 +154,12 @@ input {
   display: grid;
   gap: 1.5rem;
 }
+.abt-imgs,
+.home,
 .nav,
-.nav-ul {
+.nav-ul,
+.places-grid,
+.social {
   display: flex;
 }
 .header {
@@ -193,12 +198,6 @@ input {
 .nav-ul.show {
   display: none;
   position: absolute;
-}
-.abt-imgs,
-.home,
-.places-grid,
-.social {
-  display: flex;
 }
 .nav-ul li a {
   padding: 0.5rem;
@@ -260,6 +259,7 @@ input {
 #home {
   margin: -4.5rem 0 0;
   width: 100%;
+  padding: 4.5rem 0;
   min-height: 100dvh;
   background-image: linear-gradient(
       to top,
@@ -276,7 +276,6 @@ input {
   align-items: center;
 }
 .home-data {
-  margin-top: 10rem;
   width: 100%;
 }
 .home-data h3 {
@@ -309,7 +308,6 @@ input {
 #places {
   padding: 4.5rem 0 0;
   width: 100%;
-  min-height: 100dvh;
   justify-content: center;
   align-items: center;
 }
@@ -388,7 +386,7 @@ input {
 .places-row {
   margin-top: 30px;
   width: 200px;
-  height: 35vh;
+  aspect-ratio: 2/2.5;
   position: relative;
   text-align: left;
   padding-left: 15px;
@@ -471,12 +469,12 @@ input {
   margin: auto;
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
   justify-content: space-between;
-  padding: 20px;
+  padding: 20px 0;
 }
 .ft-container h2 {
   color: #821131;
-  margin-top: 20px;
   margin-bottom: 10px;
 }
 .ft-container ul {
@@ -552,6 +550,10 @@ input {
     text-align: center;
     height: 350px;
   }
+  .column {
+    padding-right: 50px;
+    margin-top: 50px;
+  }
   .sm {
     width: 240px;
   }
@@ -560,9 +562,6 @@ input {
   }
   .sub-box {
     padding: 0 5%;
-  }
-  .ft-container h2 {
-    margin-top: 50px;
   }
   .copy,
   .terms {
